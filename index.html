@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>My Portfolio</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='css/style.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css' type='text/javascript'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href='#home'>Home</a></li>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#portfolio'>Portfolio</a></li>
+                <li><a href='#contact-me'>Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id='home'>
+            <h1>Jenky Nolasco <span class='emphasis'>Full Stack Developer</span></h1>
+        </section>
+        <section id='about'>
+            <h2>About</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus eu mi quis iaculis. Etiam posuere ex ac dolor euismod tempus. Aenean non dignissim lacus. Donec volutpat massa a lacus interdum, nec semper sem feugiat. Duis sed dolor augue. Donec venenatis
+                at arcu eu porta. Suspendisse quis imperdiet nulla.
+            </p>
+        </section>
+        <section id='portfolio'>
+            <h2>Portfolio</h2>
+            <article class='portfolio-row'>
+                <figure class='showcase-1'>
+                    <img class='portfolio-showcase' src='http://lorempixel.com/640/480/cats/' alt='A picture of a cat'>
+                    <figcaption> A picture of a cat </figcaption>
+                </figure>
+                <figure class='showcase-2'>
+                    <img class='portfolio-showcase' src='http://lorempixel.com/640/480/cats/' alt='A picture of a cat'>
+                    <figcaption> ... And another picture of a cat </figcaption>
+                </figure>
+            </article>
+            <article class='portfolio-row'>
+                <figure class='showcase-1'>
+                    <img class='portfolio-showcase' src='http://lorempixel.com/640/480/cats/' alt='A picture of a cat'>
+                    <figcaption> ... And another picture of a cat </figcaption>
+                </figure>
+                <figure class='showcase-2'>
+                    <img class='portfolio-showcase' src='http://lorempixel.com/640/480/cats/' alt='A picture of a cat'>
+                    <figcaption> ... And another picture of a cat </figcaption>
+                </figure>
+            </article>
+            <article class='portfolio-row'>
+                <figure class='showcase-1'>
+                    <img class='portfolio-showcase' src='http://lorempixel.com/640/480/cats/' alt='A picture of a cat'>
+                    <figcaption> ... And another picture of a cat </figcaption>
+                </figure>
+                <figure class='showcase-2 no-item'>
+                    <!--<img class='portfolio-showcase' src='http://lorempixel.com/640/480/cats/' alt='A picture of a cat'>-->
+                </figure>
+            </article>
+        </section>
+        <section id='contact-me'>
+            <h2>Contact Me</h2>
+            <form method="POST" enctype="application/x-www-form-urlencoded">
+                <input class="form-controls" type="text" name="name" placeholder="Jhon Doe">
+                <input class="form-controls" type="text" name="email" placeholder="john.doe@email.com">
+                <textarea class="form-controls" rows="4" cols="50" name="textarea" placeholder="Message"></textarea>
+                <input class="form-controls" type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>
+            Coded with <i class='fa fa-coffee'></i> and <i class='fa fa-heart'></i> by Jenky Nolasco. &copy;
+            <a href="#"><i class='fa fa-facebook'></i></a>
+            <a href="#"><i class='fa fa-twitter'></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

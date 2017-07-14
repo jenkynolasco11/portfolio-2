@@ -1,0 +1,178 @@
+/************************************************
+GENERAL
+*************************************************/
+
+body {
+    margin: 0;
+    flex-flow: column nowrap;
+}
+
+body,
+header,
+nav,
+ul,
+.portfolio-row,
+section {
+    display: flex;
+}
+
+header {
+    padding: 0 18px;
+    justify-content: flex-end;
+    background: chocolate;
+}
+
+li {
+    list-style: none;
+    margin: 5px;
+}
+
+a:visited,
+a:hover,
+a:link,
+a:active {
+    text-decoration: none;
+    color: beige;
+}
+
+section {
+    flex-flow: column nowrap;
+}
+
+
+/************************************************
+HEADER
+*************************************************/
+
+.emphasis {
+    color: white;
+    text-shadow: /*2px 2px 0 black, */
+    -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+
+/************************************************
+MAIN
+*************************************************/
+
+main {
+    padding: 8px;
+}
+
+h2 {
+    margin: 40px auto 60px;
+}
+
+#home,
+#about {
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+figure:not(.no-item) {
+    text-align: center;
+    background: coral;
+    border-radius: 2px;
+}
+
+figcaption {
+    margin: 2px;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.showcase-1,
+.showcase-2 {
+    flex: 1;
+}
+
+.portfolio-showcase {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    /* background: red; */
+}
+
+.form-controls {
+    margin: 2px 10px;
+}
+
+[type="submit"] {
+    /* align-self: center; */
+    width: 100px;
+}
+
+#contact-me {
+    /* margin-bottom: 100px; */
+}
+
+
+/************************************************
+FOOTER
+*************************************************/
+
+footer {
+    background: darkred;
+    flex: 1;
+    height: 10vh;
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    padding: 10px;
+}
+
+footer i {
+    /* background: yellowgreen; */
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+.fa-coffee {
+    color: black;
+}
+
+.fa-heart {
+    color: palevioletred;
+}
+
+.fa-twitter {
+    background: dodgerblue;
+    border-radius: 2px;
+}
+
+.fa-facebook {
+    background: royalblue;
+    border-radius: 2px;
+}
+
+
+/************************************************
+MEDIA-QUERIES
+*************************************************/
+
+@media screen and (max-width: 600px) {
+    #home h1 {
+        font-size: 2em;
+    }
+    .portfolio-row {
+        flex-flow: column nowrap;
+    }
+    figure {
+        align-self: center;
+    }
+}
+
+@media screen and (min-width:600px) {
+    form {
+        margin: 0 auto;
+        width: 600px;
+    }
+    footer {
+        justify-content: center;
+    }
+}
